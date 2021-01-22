@@ -12,6 +12,10 @@ class TopicService extends Service{
         var topics = await this.repo.findAll();
         return topics;
     }
+    fetch = async function(id){
+        let topic = await this.repo.findOne(id);
+        return topic;
+    }
 }
 
 exports.TopicService = TopicService;

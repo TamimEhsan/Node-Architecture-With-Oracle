@@ -12,6 +12,17 @@ class TopicController extends Controller{
         }
         res.status(200).json(topics[0]);
     };
-}
+    fetch = async (req,res,next)=>{
+        let id = req.params.id;
+
+        let topicService = new TopicService();
+        let topic = await topicService.fetch(id);
+        if(!topic)
+            res.status(404).json({code: "E0002", description: "Topic with id:" + id + " not found."});
+        else
+            res.status(200).json(topic);
+    };
+};
+
 
 exports.TopicController = TopicController;
