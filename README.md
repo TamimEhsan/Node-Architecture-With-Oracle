@@ -12,8 +12,6 @@ Some major functionality that is implemented now is
 - Redis caching
 - OOP structure
 
-Will be implemented soon
-
 - ORM with sequelizer
 
 ## Data Flow
@@ -38,6 +36,7 @@ Router here checks if the user is authorized or not. It filters all the api call
 ### Repository
 
 - Repository is where the query is executed
-- It has two head. One to redis and other to postgresql
+- It has two head. One to  ~~redis~~ and other to postgresql
+- The topic route is now sequelized with ORM
 
-At first it checks where a key is present in redis. if yes send the data from redis. Usual time 400 ms. And if not then asks the data from database and caches in redis for 3600 ms. usual time for first time data fetching is about 800 ms. 
+~~At first it checks where a key is present in redis. if yes send the data from redis. Usual time 400 ms. And if not then asks the data from database and caches in redis for 3600 ms. usual time for first time data fetching is about 800 ms.~~ 

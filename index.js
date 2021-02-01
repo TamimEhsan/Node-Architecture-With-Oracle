@@ -1,7 +1,7 @@
 const app = require('./app');
 require('dotenv').config();
 const port = process.env.PORT || 3000;
-const redisPort = process.env.redis_port || 6379;
+//const redisPort = process.env.redis_port || 6379;
 app.listen(port);
 console.log(`Server listening at PORT ${port}`);
 
