@@ -11,8 +11,8 @@ Some major functionality that is implemented now is
 - Postgres data fetch with pooling
 - Redis caching
 - OOP structure
-
 - ORM with sequelizer
+- Implementation of table association in ORM
 
 ## Data Flow
 
