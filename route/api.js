@@ -10,4 +10,5 @@ router.use('/*', (req,res,next)=>{
 });
 
 router.use(require('./topic'));
+router.use(require('./problem'));
 module.exports = router;

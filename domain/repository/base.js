@@ -1,7 +1,7 @@
 const Pool = require('pg').Pool;
 const util = require('util');
 const redis = require('redis');
-const redisPort = process.env.redis_port || 6379;
+//const redisPort = process.env.redis_port || 6379;
 
 const pool = new Pool({
     user: process.env.db_user,
@@ -10,9 +10,9 @@ const pool = new Pool({
     password: process.env.db_pass,
     port: process.env.db_port,
 });
-//let client = redis.createClient(redisPort);
-//client.get = util.promisify(client.get);
-//console.log("habijani");
+/*let client = redis.createClient(redisPort);
+client.get = util.promisify(client.get);
+*/
 class Repository{
     constructor() {
         //  this.client = redis.createClient(redisPort);
@@ -27,7 +27,7 @@ class Repository{
             return [];
         }
     };
-   /* query_redis = async function(key,query,params){
+    query_redis = async function(key,query,params){
         let data = await client.get(key);
         if( data!==null ) {
             let dataToJson = JSON.parse(data);
@@ -38,7 +38,7 @@ class Repository{
         let dataToString = JSON.stringify(rows);
         client.setex(key,3600,dataToString);
         return rows;
-    }*/
+    }
 }
 
 exports.Repository = Repository;

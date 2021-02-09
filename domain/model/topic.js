@@ -2,6 +2,7 @@ const Sequelize = require("sequelize");
 const db = require('./base');
 const Topic = db.define( 'topic' ,{
     topic_id: {
+        // fk in series table
         type: Sequelize.INTEGER,
         autoIncrement: true,
         primaryKey: true

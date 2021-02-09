@@ -40,3 +40,11 @@ Router here checks if the user is authorized or not. It filters all the api call
 - The topic route is now sequelized with ORM
 
 ~~At first it checks where a key is present in redis. if yes send the data from redis. Usual time 400 ms. And if not then asks the data from database and caches in redis for 3600 ms. usual time for first time data fetching is about 800 ms.~~ 
+
+### Model
+
+Model contains the sequelize model for all the tables. 
+
+### Config
+
+Config -> Database contains the sequelize connection to database and table associations

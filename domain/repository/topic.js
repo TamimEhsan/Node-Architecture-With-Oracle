@@ -23,7 +23,7 @@ class TopicRepository extends Repository{
             let topic = await Topic.findOne( { where: { topic_id: id } } );
             return topic;
         } catch (err){
-            console.log(err);
+           // console.log(err);
             return [];
         }
     }
