@@ -1,6 +1,6 @@
 const Service = require('./base').Service;
 
-const ProblemRepository = require('../domain/repository/problem').ProblemRepository;
+const ProblemRepository = require('../repository/problem').ProblemRepository;
 
 class ProblemService extends Service{
     constructor() {

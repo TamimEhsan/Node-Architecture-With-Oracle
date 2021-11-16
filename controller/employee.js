@@ -1,28 +1,30 @@
 const Controller = require('./base').Controller;
-const TopicService = require('../service/topic').TopicService;
-class TopicController extends Controller{
+const EmployeeRepository = require("../repository/employee").EmployeeRepository;
+const employeeRepository = new EmployeeRepository();
+
+class EmployeeController extends Controller {
     constructor() {
         super();
     }
-    list = async (req,res,next)=>{
-        let topicService = new TopicService();
-        let topics = await topicService.list();
-        if( !topics.length ){
-            res.status(204).json({code: "E0001", description: "No topic found."});
-        }
-        res.status(200).json(topics[0]);
-    };
-    fetch = async (req,res,next)=>{
-        let id = req.params.id;
 
-        let topicService = new TopicService();
-        let topic = await topicService.fetch(id);
-        if(!topic)
-            res.status(404).json({code: "E0002", description: "Topic with id:" + id + " not found."});
+    list = async (req, res, next) => {
+        let employees = await employeeRepository.findAll();
+        if (!employees.success)
+            return res.status(500).json({code: "E0001", description: "Internal Error"});
         else
-            res.status(200).json(topic);
+            return res.status(200).json(employees.data);
+    };
+    fetch = async (req, res, next) => {
+        let id = req.params.id;
+        let employee = await employeeRepository.findOne(id);
+        if (!employee.success)
+            return res.status(404).json({code: "E0002", description: "Internal Server Error"});
+        else if (employee.data.length === 0)
+            return res.status(500).json({code: "E0002", description: "Employee with id:" + id + " not found."});
+        else
+            return res.status(200).json(employee.data[0]);
     };
 };
 
 
-exports.TopicController = TopicController;
+exports.EmployeeController = EmployeeController;

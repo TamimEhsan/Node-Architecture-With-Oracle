@@ -1,6 +1,6 @@
 const Service = require('./base').Service;
 
-const TopicRepository = require('../domain/repository/topic').TopicRepository;
+const TopicRepository = require('../repository/employee').TopicRepository;
 
 class TopicService extends Service{
     constructor() {

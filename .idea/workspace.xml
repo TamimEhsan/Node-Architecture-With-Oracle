@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,12 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="700653ce-2190-4206-8b6f-3a370205a959" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/model/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/domain/model/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/model/topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/domain/model/topic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/repository/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/domain/repository/base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/repository/topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/domain/repository/topic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/employee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repository/employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/repository/employee.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/route/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/route/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/route/employee.js" beforeDir="false" afterPath="$PROJECT_DIR$/route/employee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/problem.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/problem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/topic.js" beforeDir="false" afterPath="$PROJECT_DIR$/service/topic.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +43,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1nO7Q4wJivBxkDGa8TPzXnlHSlR" />
   <component name="ProjectLevelVcsManager">
@@ -46,9 +63,15 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Poysha" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Node\Node Oracle" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,6 +106,17 @@
       <workItem from="1612806207503" duration="5000" />
       <workItem from="1612806466716" duration="414000" />
       <workItem from="1612807583548" duration="781000" />
+      <workItem from="1612852582090" duration="278000" />
+      <workItem from="1612852893596" duration="3255000" />
+      <workItem from="1618415982634" duration="1078000" />
+      <workItem from="1625242297480" duration="290000" />
+      <workItem from="1625243391126" duration="25000" />
+      <workItem from="1625243426480" duration="5000" />
+      <workItem from="1625243774583" duration="233000" />
+      <workItem from="1637077645948" duration="2494000" />
+      <workItem from="1637084677439" duration="1087000" />
+      <workItem from="1637085798923" duration="21000" />
+      <workItem from="1637091771538" duration="2749000" />
     </task>
     <servers />
   </component>
@@ -100,11 +134,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1611519382794">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611519382794" />
   </component>
 </project>
