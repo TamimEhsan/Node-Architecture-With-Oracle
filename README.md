@@ -6,13 +6,14 @@ The structure is separated in several layers.
 
 Some major functionality that is implemented now is
 
-- Repository design pattern
-- Passport jwt authentication
-- Postgres data fetch with pooling
-- Redis caching
-- OOP structure
-- ORM with sequelizer
-- Implementation of table association in ORM
+- Router
+- Passport Authentication
+- Validation middlewares (Not included in this one)
+- Controller
+- Service (Didn;t use in this project)
+- Repository 
+- Oracle Database Connection
+
 
 ## Data Flow
 
@@ -21,30 +22,66 @@ Some major functionality that is implemented now is
 - At first http request is accepeted from app.js and routed to route/api.js
 - There it is passed to whatever path it is
 
+### Authentication
 Router here checks if the user is authorized or not. It filters all the api calls in api route
+
+### Validation
+Validation middleware validates and sanitized the user input to minimize security risks. Not included in this project
 
 ### Controller
 
 - The main/business logic is implemented is controller layer
-- It asks for data from service layer
+- It asks for data from service layer (But for this straight from repository)
 
 ### Service
-
+Not included
 - Service layer implements all logic related to sql queries
 - But it doesn't fetch the data itself
 
 ### Repository
+- Repository is where the query is executed and served
+- Redis or Node Caching is done here (Not included)
 
-- Repository is where the query is executed
-- It has two head. One to  ~~redis~~ and other to postgresql
-- The topic route is now sequelized with ORM
 
-~~At first it checks where a key is present in redis. if yes send the data from redis. Usual time 400 ms. And if not then asks the data from database and caches in redis for 3600 ms. usual time for first time data fetching is about 800 ms.~~ 
+### Dependencies
 
-### Model
+The project runs on NodeJS environment. So at first you should download node in your machine. Bear in mind node takes huge amount of to download
 
-Model contains the sequelize model for all the tables. 
+### Installing
 
-### Config
+Run the script
 
-Config -> Database contains the sequelize connection to database and table associations
+```
+npm install
+```
+
+### Executing program
+
+Run the script 
+```
+npm start
+```
+to start nodemonitor realtime updater for node environment.
+To kill process type cltrl+c in terminal
+
+## Help
+
+Any advise for common problems or issues ask directly
+
+## Authors
+
+Contributors names and contact info
+
+Tamim Ehsan
+
+## Version History
+
+* 0.2
+    *  Sequelize, redis, service layer removed
+    * Changed from POSTGRE to ORACLE
+* 0.1
+    * Initial Release 
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE.md file for details
