@@ -43,7 +43,12 @@ Not included
 - Redis or Node Caching is done here (Not included)
 
 
-### Dependencies
+
+## Download
+
+Download zip of this repository, or clone this from git cli
+
+## Dependencies
 
 The project runs on NodeJS environment. So at first you should download node in your machine. Bear in mind node takes huge amount of to download
 
