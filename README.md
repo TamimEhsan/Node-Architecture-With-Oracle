@@ -47,7 +47,7 @@ Not included
 
 The project runs on NodeJS environment. So at first you should download node in your machine. Bear in mind node takes huge amount of to download
 
-### Installing
+## Installing
 
 Run the script
 
@@ -55,7 +55,7 @@ Run the script
 npm install
 ```
 
-### Executing program
+## Executing program
 
 Run the script 
 ```
