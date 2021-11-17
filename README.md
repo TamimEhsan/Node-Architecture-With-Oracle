@@ -60,6 +60,19 @@ Run the script
 npm install
 ```
 
+## Configure
+
+The envionment variables and other sensitive info like password are kept in a env file. Create a `.env` file in the root folder.
+Add the following variables in it
+
+```dotenv
+PORT=4000
+DB_USER=YOUR_DB_USER
+DB_PASS=YOUR_DB_PASSWORD
+DB_CONNECT_STRING=YOUR_DB_CONNECT_STRING
+JWT_SECRET=YOUR_JWT_SECRET
+```
+
 ## Executing program
 
 Run the script 
