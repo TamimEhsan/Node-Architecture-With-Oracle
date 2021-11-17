@@ -12,7 +12,7 @@ class JobRepository extends Repository{
     }
 
     findOne = async function(id){
-        const query = "SELECT * FROM JOBS WHERE job_id = $1";
+        const query = "SELECT * FROM JOBS WHERE job_id = :1";
         const params = [id];
         const result = await this.query(query,params);
         return result;

@@ -12,8 +12,9 @@ class EmployeeRepository extends Repository{
     }
 
     findOne = async function(id){
-        const query = "SELECT * FROM EMPLOYEES WHERE id = $1";
-        const params = [id];
+        // Binding occurs serially as present in the array
+        const query = "SELECT * FROM employees WHERE employee_id > :employee_id AND employee_id < :2";
+        const params = [id,200];
         const result = await this.query(query,params);
         return result;
     }

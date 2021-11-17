@@ -22,7 +22,7 @@ class EmployeeController extends Controller {
         else if (employee.data.length === 0)
             return res.status(500).json({code: "E0002", description: "Employee with id:" + id + " not found."});
         else
-            return res.status(200).json(employee.data[0]);
+            return res.status(200).json(employee.data);
     };
 };
 

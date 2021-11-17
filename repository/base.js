@@ -1,5 +1,5 @@
 const oracledb = require('oracledb');
-
+oracledb.outFormat = oracledb.OBJECT;
 class Repository {
     constructor() {
         this.connection = undefined;
@@ -8,9 +8,9 @@ class Repository {
     query = async function (query, params) {
         if (this.connection === undefined) {
             this.connection = await oracledb.getConnection({
-                user: "c##tamim",
-                password: "password",
-                connectionString: "localhost/orcl"
+                user: process.env.DB_USER,
+                password: process.env.DB_PASS,
+                connectionString: process.env.DB_CONNECT_STRING
             });
         }
         try {
@@ -21,6 +21,7 @@ class Repository {
             }
 
         } catch (error) {
+            console.log(error);
             return {
                 success:false,
                 error
